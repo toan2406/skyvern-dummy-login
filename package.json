@@ -10,6 +10,7 @@
     "prettier": "^3.6.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router": "^7.6.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && cp ./build/index.html ./build/200.html && cp ./public/CNAME ./build/CNAME && surge ./build/"
   },
   "eslintConfig": {
     "extends": [

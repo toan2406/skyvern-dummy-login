@@ -49,7 +49,13 @@ input {
   font-size: 16px;
 }
 
-.login-form {
+p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.login-form,
+.center-box {
   max-width: 300px;
   margin: auto;
   margin-top: 100px;
@@ -61,4 +67,13 @@ input {
 .error {
   margin-bottom: 16px;
   color: red;
+}
+
+code {
+  display: block;
+  padding: 4px;
+  text-align: center;
+  overflow-wrap: break-word;
+  background-color: lightgray;
+  border-radius: 4px;
 }
