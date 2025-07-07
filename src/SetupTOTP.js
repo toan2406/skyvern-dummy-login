@@ -57,7 +57,7 @@ const SetupTOTP = () => {
         {secretType === "qr" ? (
           <img alt="totp_secret_qr" src="/totp_secret_qr.gif" />
         ) : (
-          <code>NFCGGOB2KFKC60J4JNTSGQTBPE4HCRJ7</code>
+          <code>NFCGGOB2KFKC6OJ4JNTSGQTBPE4HCRJ7</code>
         )}
 
         <p>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router";
 import "./App.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   const [otp, setOtp] = useState("");
   const [status, setStatus] = useState(null);
   const [error, setError] = useState("");
+  const [searchParams] = useSearchParams();
 
   const handleSubmitLogin = (e) => {
     e.preventDefault();
@@ -73,6 +75,12 @@ function App() {
 
   return (
     <form className="login-form" onSubmit={handleSubmitLogin}>
+      {searchParams.get("referrer") === "setup_password" ? (
+        <div className="success">
+          Your account has been activated. You may now sign in.
+        </div>
+      ) : null}
+
       <h1>Sign in</h1>
 
       <div>
